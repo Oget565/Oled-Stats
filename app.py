@@ -47,11 +47,11 @@ def get_temp():
 #IN DEVELOPMENT!!!!
 def display_oled(c, r, d, t, i):
     with canvas(device) as draw:
-        draw.text((0,0), f"CPU: {c}%", fill="white")
-        draw.text((0,10), f"RAM: {r}%", fill="white")
-        draw.text((0,20), f"DISK: {d}%", fill="white")
-        draw.text((0,30), f"TEMP: {t}%", fill="white")
-        draw.text((0,40), f"IP: {i}", fill="white")
+        draw.text((0, 2), f"CPU: {c}%", fill="white")
+        draw.text((0, 14), f"RAM: {r}%", fill="white")
+        draw.text((0, 26), f"DISK: {d}%", fill="white")
+        draw.text((0, 38), f"TEMP: {t}C", fill="white")
+        draw.text((0, 50), f"IP: {i}", fill="white")
 
 
 def main():
